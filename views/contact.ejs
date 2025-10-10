@@ -1,0 +1,49 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar', { page: "contact" }) %>
+
+<section class="contact-preview">
+  <video autoplay muted loop playsinline class="contact-video">
+    <source src="/images/contact.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="contact-intro">
+    <h1>Get in Touch</h1>
+    <p>Have questions? We’re happy to help you naturally on your fertility journey!</p>
+  </div>
+</section>
+
+<section class="contact-methods">
+  <div class="contact-item">
+    <h2>Phone</h2>
+    <p>+234 806 718 5216</p>
+  </div>
+
+  <div class="contact-item">
+    <h2>Email</h2>
+    <p>Greenrootsnaturalherbs@gmail.com</p>
+  </div>
+
+  <div class="contact-item">
+    <h2>WhatsApp</h2>
+    <p>+234 806 718 5216</p>
+  </div>
+</section>
+
+<section class="contact-form">
+  <% if (messages && messages.length > 0) { %>
+    <div class="flash-message">
+      <p><%= messages[0] %></p>
+    </div>
+  <% } %>
+
+  <h2>Send Us a Message</h2>
+  <form action="/contact" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+    <button type="submit" class="btn-cta">Send</button>
+  </form>
+</section>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,13 @@
+<section class="products">
+  <h2>Our Products</h2>
+  <div class="product-container">
+    <% for(let i = 1; i <= 6; i++) { %>
+      <div class="product-card">
+        <img src="/images/product-placeholder.png" alt="Product <%= i %>">
+        <h3>Product <%= i %></h3>
+        <p>Short description for product <%= i %>.</p>
+        <button class="btn-order">Order</button>
+      </div>
+    <% } %>
+  </div>
+</section>

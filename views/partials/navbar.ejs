@@ -1,0 +1,17 @@
+<nav class="nav">
+  <div id="nav-overlay" class="nav-overlay"></div>
+  
+  <a href="/" class="logo">
+    <img src="/images/logo3.png" alt="Greenroots Logo">
+  </a>
+
+  <!-- hamburger -->
+  <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
+
+  <ul id="nav-links" class="nav-links">
+    <li><a href="/" class="<%= page === 'home' ? 'active' : '' %>">Home</a></li>
+    <li><a href="/about" class="<%= page === 'about' ? 'active' : '' %>">About</a></li>
+    <li><a href="/products" class="<%= page === 'products' ? 'active' : '' %>">Products</a></li>
+    <li><a href="/contact" class="<%= page === 'contact' ? 'active' : '' %>">Contact</a></li>
+  </ul>
+</nav>

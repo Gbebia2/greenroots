@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar', { page: "products" }) %>
+
+<section class="product-detail">
+  <h1><%= product.name %></h1>
+  <img src="<%= product.image %>" alt="<%= product.name %>">
+  <p>Here’s a description of <%= product.name %>…</p>
+
+  <button id="order-btn" class="btn-order">Order Now</button>
+
+  <div id="contact-info" class="contact-info">
+    <p>Phone: +2349037582665</p>
+    <p>Email: bebias@gmail.com</p>
+    <p>WhatsApp: +2349037582665</p>
+  </div>
+</section>
+
+<%- include('partials/footer') %>
+
+<script>
+  const btn = document.getElementById("order-btn");
+  const contact = document.getElementById("contact-info");
+
+  btn.addEventListener("click", () => {
+    contact.classList.toggle("show");
+  });
+</script>
