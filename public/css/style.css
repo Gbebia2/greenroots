@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 /* ========== Body & Base ========== */
 body {
@@ -584,6 +585,39 @@ nav a {
 .btn-cta:hover {
   background-color: #3aa13a;
   transform: scale(1.05);
+}
+
+.founder-section {
+  padding: 4rem 1rem;
+  background-color: #f9f9f4; /* soft, off-white for premium feel */
+  text-align: center;
+}
+
+.founder-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 2rem;
+  color: #1e7b1e;
+  margin-bottom: 0.5rem;
+}
+
+.founder-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.founder-content p {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
 }
 
 /* ========== Media Queries / Responsive ========== */
