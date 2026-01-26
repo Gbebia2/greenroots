@@ -36,9 +36,9 @@ nav h2 {
 .nav-links {
   flex-direction: column;
   gap: 0.75rem;
-  position: fixed;      
+  position: fixed;
   top: 0;
-  right: -250px;       
+  right: -250px;
   width: 200px;
   height: 100%;
   background: #ffffff;
@@ -535,6 +535,18 @@ nav a {
   border-radius: 8px;
 }
 
+.whatsapp-link {
+  color: #1e7b1e;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.whatsapp-link:hover {
+  color: #166416;
+  text-decoration: underline;
+}
+
 /* ========== Footer ========== */
 .footer {
   text-align: center;
@@ -545,6 +557,15 @@ nav a {
 .footer p {
   margin-bottom: 1rem;
   font-size: 0.9rem;
+}
+
+.footer-disclaimer {
+  max-width: 750px;
+  margin: -0.5rem auto 1.2rem; /* tucks it closer to copyright */
+  font-size: 0.75rem; /* smaller than normal footer text */
+  color: #4f4f4f;
+  line-height: 1.6;
+  padding: 0 1rem;
 }
 
 .social-links a {
