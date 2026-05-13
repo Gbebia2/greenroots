@@ -26,6 +26,12 @@ const productsData = [
     name: "Female Fertility Treatment",
     image: "/images/female-fertility.jfif",
     description: "A gentle, nurturing herbal treatment designed to support reproductive wellness and hormonal harmony for women."
+  },
+  {
+    id: 5,
+    name: "Menstrual Relief",
+    image: "/images/menstrual-relief.jpg",
+    description: "A soothing blend of natural herbs designed to alleviate discomfort and promote balance during menstruation."
   }
 ];
 
