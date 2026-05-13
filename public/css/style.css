@@ -738,3 +738,21 @@ nav a {
 }
 
 }
+
+/* Styles for the individual product detail page */
+.product-detail img {
+  max-width: 100%;    /* Ensures the image never overflows the screen width */
+  height: auto;        /* Maintains the correct proportions */
+  max-height: 500px;   /* Prevents the image from being too tall vertically */
+  display: block;
+  margin: 0 auto 30px; /* Centers the image and adds space below it */
+  border-radius: 12px; /* Smooths the edges to match a premium brand look */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Adds a subtle professional lift */
+}
+
+.product-detail p {
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  text-align: center;
+}

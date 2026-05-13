@@ -1,13 +1,13 @@
 <section class="products">
   <h2>Our Products</h2>
   <div class="product-container">
-    <% for(let i = 1; i <= 6; i++) { %>
+    <% products.forEach(product => { %>
       <div class="product-card">
-        <img src="/images/product-placeholder.png" alt="Product <%= i %>">
-        <h3>Product <%= i %></h3>
-        <p>Short description for product <%= i %>.</p>
-        <button class="btn-order">Order</button>
+        <img src="<%= product.image %>" alt="<%= product.name %>">
+        <h3><%= product.name %></h3>
+        <p>Short description for <%= product.name %>.</p>
+        <a href="/products/<%= product.id %>" class="btn-order">Order</a>
       </div>
-    <% } %>
+    <% }) %>
   </div>
 </section>
